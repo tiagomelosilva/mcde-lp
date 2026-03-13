@@ -19,18 +19,101 @@
 
   const menuToggle = qs('#menuToggle');
   const mainNav = qs('#mainNav');
+  const navbar = qs('#topo');
+  const logoLink = qs('.logo-link');
 
   if (menuToggle && mainNav) {
+    function closeMainNav() {
+      mainNav.classList.remove('is-open');
+      menuToggle.classList.remove('is-active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }
+
+    function openMainNav() {
+      mainNav.classList.add('is-open');
+      menuToggle.classList.add('is-active');
+      menuToggle.setAttribute('aria-expanded', 'true');
+    }
+
     menuToggle.addEventListener('click', function () {
-      const open = mainNav.classList.toggle('is-open');
-      menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      const open = mainNav.classList.contains('is-open');
+      if (open) {
+        closeMainNav();
+        return;
+      }
+      openMainNav();
+    });
+
+    document.addEventListener('click', function (event) {
+      if (navbar && !navbar.contains(event.target)) {
+        closeMainNav();
+      }
+    });
+
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 1024) {
+        closeMainNav();
+      }
     });
 
     qsa('a', mainNav).forEach(function (link) {
-      link.addEventListener('click', function () {
-        mainNav.classList.remove('is-open');
-        menuToggle.setAttribute('aria-expanded', 'false');
+      link.addEventListener('click', function (event) {
+        const href = link.getAttribute('href') || '';
+        if (!href.startsWith('#')) {
+          if (window.innerWidth <= 1024) closeMainNav();
+          return;
+        }
+
+        const target = qs(href);
+        if (!target) {
+          if (window.innerWidth <= 1024) closeMainNav();
+          return;
+        }
+
+        event.preventDefault();
+
+        const headerOffset = navbar ? navbar.offsetHeight + 8 : 0;
+        const targetTop = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        window.scrollTo({
+          top: Math.max(0, targetTop),
+          behavior: reduceMotion ? 'auto' : 'smooth'
+        });
+
+        if (window.history && window.history.pushState) {
+          window.history.pushState(null, '', href);
+        }
+
+        if (window.innerWidth <= 1024) {
+          closeMainNav();
+        }
       });
+    });
+
+    if (!menuToggle.hasAttribute('aria-controls')) {
+      menuToggle.setAttribute('aria-controls', 'mainNav');
+    }
+    if (!menuToggle.hasAttribute('aria-expanded')) {
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  if (logoLink) {
+    logoLink.addEventListener('click', function (event) {
+      const href = logoLink.getAttribute('href') || '';
+      if (!href.startsWith('#')) return;
+
+      event.preventDefault();
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({
+        top: 0,
+        behavior: reduceMotion ? 'auto' : 'smooth'
+      });
+
+      if (window.history && window.history.pushState) {
+        window.history.pushState(null, '', href);
+      }
     });
   }
 
@@ -163,19 +246,27 @@
 
   const galleryData = {
     educacao: [
-      { src: 'images/thumb-projetos01.jpg', caption: 'Educação - Unidade 01' },
-      { src: 'images/bn001.jpg', caption: 'Educação - Unidade 02' },
-      { src: 'images/bn02.jpg', caption: 'Educação - Unidade 03' }
+      { src: 'images/galeria-educacao/em-joao-candido-01.jpg', caption: 'Educação - EM João Cândido 01' },
+      { src: 'images/galeria-educacao/em-joao-candido-02.jpg', caption: 'Educação - EM João Cândido 02' },
+      { src: 'images/galeria-educacao/em-levina-01.jpg', caption: 'Educação - EM Levina 01' },
+      { src: 'images/galeria-educacao/em-levina-02.jpg', caption: 'Educação - EM Levina 02' },
+      { src: 'images/galeria-educacao/em-telma-regina-01.jpg', caption: 'Educação - EM Telma Regina 01' },
+      { src: 'images/galeria-educacao/em-telma-regina-02.jpg', caption: 'Educação - EM Telma Regina 02' }
     ],
     saude: [
-      { src: 'images/thumb-projetos02.jpg', caption: 'Saúde - Unidade 01' },
-      { src: 'images/bn02.jpg', caption: 'Saúde - Unidade 02' },
-      { src: 'images/bn001.jpg', caption: 'Saúde - Unidade 03' }
+      { src: 'images/galera-saude/saude-01.jpg', caption: 'Saúde - Unidade 01' },
+      { src: 'images/galera-saude/saude-02.jpg', caption: 'Saúde - Unidade 02' },
+      { src: 'images/galera-saude/saude-03.jpg', caption: 'Saúde - Unidade 03' },
+      { src: 'images/galera-saude/saude-04.jpg', caption: 'Saúde - Unidade 04' },
+      { src: 'images/galera-saude/saude-05.jpg', caption: 'Saúde - Unidade 05' }
     ],
     administracao: [
-      { src: 'images/bn001.jpg', caption: 'Administração - Unidade 01' },
-      { src: 'images/thumb-projetos01.jpg', caption: 'Administração - Unidade 02' },
-      { src: 'images/thumb-projetos02.jpg', caption: 'Administração - Unidade 03' }
+      { src: 'images/galeria-administracao/adm-01.jpg', caption: 'Administração - Unidade 01' },
+      { src: 'images/galeria-administracao/adm-02.jpg', caption: 'Administração - Unidade 02' },
+      { src: 'images/galeria-administracao/adm-03.jpg', caption: 'Administração - Unidade 03' },
+      { src: 'images/galeria-administracao/adm-04.jpg', caption: 'Administração - Unidade 04' },
+      { src: 'images/galeria-administracao/adm-05.jpg', caption: 'Administração - Unidade 05' },
+      { src: 'images/galeria-administracao/adm-06.jpg', caption: 'Administração - Unidade 06' }
     ]
   };
 

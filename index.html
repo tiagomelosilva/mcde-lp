@@ -16,7 +16,7 @@
         <img src="images/mcde-logo-branco.png" class="logo" alt="MCDE Engenharia">
       </a>
 
-      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
         <span></span>
         <span></span>
         <span></span>
@@ -39,7 +39,7 @@
         <div class="hero-overlay"></div>
         <div class="container hero-content">
           <h1>EXCELÊNCIA EM GESTÃO<br>E EXECUÇÃO DE MANUTENÇÃO</h1>
-          <p>Transparência, eficiência e gestão inteligente na manutenção de patrimônios públicos.</p>
+          <p>Transparência, eficiência e gestão inteligente<br />na manutenção de patrimônios públicos.</p>
         </div>
       </div>
 
@@ -47,12 +47,16 @@
         <div class="hero-overlay"></div>
         <div class="container hero-content">
           <h1>MANUTENÇÃO PÚBLICA<br>COM TECNOLOGIA E CONTROLE</h1>
-          <p>Planejamento, operação e rastreabilidade para resultados reais.</p>
+          <p>Planejamento, operação e rastreabilidade<br />para resultados reais.</p>
         </div>
       </div>
 
-      <button class="hero-nav hero-prev" id="heroPrev" type="button" aria-label="Slide anterior">&#10094;</button>
-      <button class="hero-nav hero-next" id="heroNext" type="button" aria-label="Próximo slide">&#10095;</button>
+      <button class="hero-nav hero-prev" id="heroPrev" type="button" aria-label="Slide anterior">
+        <img src="icons/right-chevron.png" alt="" aria-hidden="true">
+      </button>
+      <button class="hero-nav hero-next" id="heroNext" type="button" aria-label="Próximo slide">
+        <img src="icons/right-chevron.png" alt="" aria-hidden="true">
+      </button>
       <div class="hero-dots" id="heroDots"></div>
     </section>
 
@@ -179,7 +183,7 @@
     <section class="projetos" id="projetos">
       <div class="projeto-linha">
         <article class="projeto-foto projeto-click" data-gallery="educacao">
-          <img src="images/thumb-projetos01.jpg" alt="Projetos de Educação">
+          <img src="images/thumb-educacao.jpg" alt="Projetos de Educação">
         </article>
         <article class="projeto-texto projeto-texto-direita">
           <p class="projeto-numero">01</p>
@@ -192,24 +196,24 @@
       <div class="projeto-linha">
         <article class="projeto-texto">
           <p class="projeto-numero">02</p>
-          <p class="projeto-tag">Educação</p>
+          <p class="projeto-tag">Saúde</p>
           <h3>Manutenção e gestão<br>de patrimônios públicos</h3>
-          <p class="projeto-descricao">Atuação em escolas, centros educacionais e unidades de ensino, garantindo condições adequadas de funcionamento para alunos, professores e equipes administrativas.</p>
+          <p class="projeto-descricao">Realização de reformas, ampliações e manutenção de infraestrutura em hospitais, clínicas e unidades de saúde, garantindo ambientes seguros, funcionais e adequados.</p>
           <button type="button" class="open-gallery projeto-open" data-gallery="saude">Fale comigo</button>
         </article>
         <article class="projeto-foto projeto-click" data-gallery="saude">
-          <img src="images/thumb-projetos02.jpg" alt="Projetos de Educação">
+          <img src="images/thumb-saude.jpg" alt="Projetos de Saúde">
         </article>
       </div>
       <div class="projeto-linha">
         <article class="projeto-foto projeto-click" data-gallery="administracao">
-          <img src="images/thumb-projetos01.jpg" alt="Projetos de Educação">
+          <img src="images/thumb-administracao.jpg" alt="Projetos de Administração">
         </article>
         <article class="projeto-texto projeto-texto-direita">
           <p class="projeto-numero">03</p>
-          <p class="projeto-tag">Educação</p>
+          <p class="projeto-tag">Administração</p>
           <h3>Manutenção e gestão<br>de patrimônios públicos</h3>
-          <p class="projeto-descricao">Atuação em escolas, centros educacionais e unidades de ensino, garantindo condições adequadas de funcionamento para alunos, professores e equipes administrativas.</p>
+          <p class="projeto-descricao">Realização de reformas, ampliações e melhorias em edifícios e unidades administrativas, proporcionando ambientes funcionais, seguros e adequados.</p>
           <button type="button" class="open-gallery projeto-open" data-gallery="administracao">Fale comigo</button>
         </article>
       </div>
@@ -228,7 +232,7 @@
           <article class="numero">
             <span class="numero-icon" aria-hidden="true"><img src="icons/technical-support.png" alt=""></span>
             <h3>+<span class="counter" data-target="8">0</span> Mil</h3>
-            <p><span>Ordentes</span><span>de serviço</span></p>
+            <p><span>Ordens</span><span>de serviço</span></p>
           </article>
           <article class="numero">
             <span class="numero-icon" aria-hidden="true"><img src="icons/money.png" alt=""></span>
@@ -237,7 +241,7 @@
           </article>
           <article class="numero">
             <span class="numero-icon" aria-hidden="true"><img src="icons/map.png" alt=""></span>
-            <h3>+<span class="counter" data-target="15">0</span></h3>
+            <h3><span class="counter" data-target="2">0</span></h3>
             <p><span>Municípios</span><span>Atendidos</span></p>
           </article>
         </div>
