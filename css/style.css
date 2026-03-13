@@ -1548,12 +1548,12 @@ body.modal-lock {
 }
 
 .vagas-container {
-  width: min(1060px, 92vw);
+  width: min(1180px, 92vw);
   margin: 0 auto;
   position: relative;
   z-index: 2;
   min-height: 848px;
-  grid-template-columns: 260px 470px;
+  display: flex;
   gap: 74px;
   align-items: center;
   justify-content: center;
@@ -1561,10 +1561,11 @@ body.modal-lock {
 }
 
 .vagas-slider-wrap {
-  width: 260px;
-  max-width: 260px;
-  height: 768px;
-  max-height: 768px;
+  flex: 0 0 360px;
+  width: 360px;
+  max-width: 360px;
+  height: 868px;
+  max-height: 868px;
   overflow: visible;
   position: relative;
   padding: 0;
@@ -1683,6 +1684,7 @@ body.modal-lock {
 }
 
 .vagas-texto {
+  flex: 0 0 470px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -1690,7 +1692,7 @@ body.modal-lock {
   width: 470px;
   max-width: 470px;
   padding: 0;
-  justify-self: start;
+  justify-self: center;
   align-self: center;
 }
 
@@ -1911,7 +1913,9 @@ body.modal-lock {
   }
 
   .vagas-container {
+    display: grid;
     min-height: 0;
+    width: min(700px, 92vw);
     grid-template-columns: 1fr;
     gap: 18px;
     padding: 32px 0;
@@ -1920,8 +1924,8 @@ body.modal-lock {
   .vagas-slider-wrap {
     max-height: none;
     overflow: visible;
-    width: min(380px, 92vw);
-    max-width: min(380px, 92vw);
+    width: min(500px, 92vw);
+    max-width: min(500px, 92vw);
     height: auto;
     padding: 28px 0 18px;
     margin: 0 auto;
@@ -1943,8 +1947,8 @@ body.modal-lock {
   }
 
   .vaga-card {
-    width: min(330px, 84vw);
-    min-width: min(330px, 84vw);
+    width: min(490px, 92vw);
+    min-width: min(490px, 92vw);
   }
 
   .vaga-card h4 {
@@ -1965,6 +1969,7 @@ body.modal-lock {
   .vagas-texto {
     padding: 4px 0 0;
     text-align: center;
+    justify-self: center;
   }
 
   .vagas-texto h2 {
