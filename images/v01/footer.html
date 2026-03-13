@@ -1,0 +1,538 @@
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+
+<footer class="tgmafla-footer-section" id="contato">
+  <div class="tgmafla-footer-overlay"></div>
+  <div class="tgmafla-footer-lines"></div>
+
+  <div class="tgmafla-footer-shell">
+    <div class="tgmafla-footer-top">
+      <div class="tgmafla-footer-brand-col">
+        <a href="/" class="tgmafla-footer-logo-link" aria-label="Mafla Odontologia">
+          <img
+            class="tgmafla-footer-logo-img"
+            src="https://maflaodontologia.com.br/wp-content/uploads/2026/03/MAFLA-LOGO-02.png"
+            alt="Mafla Odontologia"
+          />
+        </a>
+
+        <nav class="tgmafla-footer-nav" aria-label="Menu do rodapé">
+          <div class="tgmafla-footer-nav-row">
+            <a href="#especialidades" class="tgmafla-footer-nav-link">Especialidades</a>
+            <a href="#sobre-nos" class="tgmafla-footer-nav-link">Sobre Nós</a>
+            <a href="#casos-clinicos" class="tgmafla-footer-nav-link">Casos Clínicos</a>
+          </div>
+
+          <div class="tgmafla-footer-nav-row">
+            <a href="#profissionais" class="tgmafla-footer-nav-link">Profissionais</a>
+            <a href="#contato" class="tgmafla-footer-nav-link">Contato</a>
+          </div>
+        </nav>
+
+        <div class="tgmafla-footer-socials">
+          <a
+            href="https://instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="tgmafla-footer-social-link"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="https://facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="tgmafla-footer-social-link"
+            aria-label="Facebook"
+          >
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+
+          <a
+            href="https://wa.me/556232284073"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="tgmafla-footer-social-link"
+            aria-label="WhatsApp"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="tgmafla-footer-info-col">
+        <div class="tgmafla-footer-info-block">
+          <h3 class="tgmafla-footer-info-title">Endereço:</h3>
+          <p class="tgmafla-footer-info-text">
+            Rua Igarapé - Vila Alzira, Aparecida de<br />
+            Goiânia - GO, 74913-510
+          </p>
+        </div>
+
+        <div class="tgmafla-footer-info-block">
+          <h3 class="tgmafla-footer-info-title">Contato:</h3>
+          <p class="tgmafla-footer-contact-row">
+            <span class="tgmafla-footer-contact-icon">
+              <i class="fa-solid fa-square-phone"></i>
+            </span>
+            <a href="tel:+556232284073" class="tgmafla-footer-contact-link">
+              (62) 3228-4073
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tgmafla-footer-bottom">
+      <div class="tgmafla-footer-bottom-line"></div>
+      <p class="tgmafla-footer-copy">
+        Mafla Odontologia — Copyright © 2026
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .tgmafla-footer-section,
+  .tgmafla-footer-section *,
+  .tgmafla-footer-section *::before,
+  .tgmafla-footer-section *::after {
+    box-sizing: border-box;
+  }
+
+  .tgmafla-footer-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("https://maflaodontologia.com.br/wp-content/uploads/2026/03/bg-footer.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 40px 20px 14px;
+    isolation: isolate;
+  }
+
+  .tgmafla-footer-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(10, 10, 10, 0.25) 0%,
+        rgba(4, 4, 4, 0.42) 100%
+      );
+  }
+
+  .tgmafla-footer-lines {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.28;
+  }
+
+  .tgmafla-footer-lines::before,
+  .tgmafla-footer-lines::after {
+    content: "";
+    position: absolute;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    border-radius: 36px;
+  }
+
+  .tgmafla-footer-lines::before {
+    width: 42%;
+    height: 58%;
+    top: -10px;
+    left: -8%;
+  }
+
+  .tgmafla-footer-lines::after {
+    width: 44%;
+    height: 64%;
+    right: -10%;
+    top: 70%;
+    transform: translateY(-50%);
+  }
+
+  .tgmafla-footer-shell {
+    position: relative;
+    z-index: 2;
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+
+  .tgmafla-footer-top {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 430px);
+    gap: 40px 50px;
+    align-items: start;
+  }
+
+  .tgmafla-footer-brand-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+  }
+
+  .tgmafla-footer-logo-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    line-height: 0;
+    margin-bottom: 18px;
+  }
+
+  .tgmafla-footer-logo-img {
+    display: block;
+    width: 170px;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .tgmafla-footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    max-width: 640px;
+    margin-bottom: 22px;
+  }
+
+  .tgmafla-footer-nav-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 28px;
+  }
+
+  .tgmafla-footer-nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.15;
+    transition: opacity 0.25s ease;
+  }
+
+  .tgmafla-footer-nav-link:hover,
+  .tgmafla-footer-nav-link:focus {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  .tgmafla-footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .tgmafla-footer-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 36px;
+    line-height: 1;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+
+  .tgmafla-footer-social-link:hover,
+  .tgmafla-footer-social-link:focus {
+    transform: translateY(-1px);
+    opacity: 0.82;
+    outline: none;
+  }
+
+  .tgmafla-footer-info-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 6px;
+    min-width: 0;
+  }
+
+  .tgmafla-footer-info-block + .tgmafla-footer-info-block {
+    margin-top: 18px;
+  }
+
+  .tgmafla-footer-info-title {
+    margin: 0 0 6px;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 1.15;
+  }
+
+  .tgmafla-footer-info-text,
+  .tgmafla-footer-contact-link {
+    margin: 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.28;
+    text-wrap: balance;
+  }
+
+  .tgmafla-footer-contact-row {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .tgmafla-footer-contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1;
+    flex: 0 0 auto;
+  }
+
+  .tgmafla-footer-bottom {
+    margin-top: 30px;
+  }
+
+  .tgmafla-footer-bottom-line {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #dca294, #efb2a2);
+    margin-bottom: 20px;
+  }
+
+  .tgmafla-footer-copy {
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+
+  @media (max-width: 1100px) {
+    .tgmafla-footer-section {
+      padding: 34px 18px 14px;
+    }
+
+    .tgmafla-footer-top {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      justify-items: center;
+      text-align: center;
+    }
+
+    .tgmafla-footer-brand-col,
+    .tgmafla-footer-info-col {
+      align-items: center;
+      text-align: center;
+    }
+
+    .tgmafla-footer-logo-link {
+      justify-content: center;
+    }
+
+    .tgmafla-footer-nav {
+      align-items: center;
+      justify-content: center;
+      max-width: 760px;
+      margin-bottom: 20px;
+    }
+
+    .tgmafla-footer-nav-row {
+      justify-content: center;
+    }
+
+    .tgmafla-footer-socials {
+      justify-content: center;
+    }
+
+    .tgmafla-footer-contact-row {
+      justify-content: center;
+    }
+
+    .tgmafla-footer-nav-link,
+    .tgmafla-footer-info-text,
+    .tgmafla-footer-contact-link {
+      font-size: 18px;
+    }
+
+    .tgmafla-footer-info-title {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .tgmafla-footer-section {
+      padding: 28px 14px 14px;
+    }
+
+    .tgmafla-footer-lines::before {
+      width: 88%;
+      height: 36%;
+      left: -36%;
+      top: 56%;
+      transform: translateY(-50%);
+    }
+
+    .tgmafla-footer-lines::after {
+      width: 82%;
+      height: 36%;
+      right: -40%;
+      top: 20%;
+      transform: none;
+    }
+
+    .tgmafla-footer-logo-link {
+      margin-bottom: 16px;
+    }
+
+    .tgmafla-footer-logo-img {
+      width: 148px;
+    }
+
+    .tgmafla-footer-nav {
+      max-width: 420px;
+      margin-bottom: 18px;
+    }
+
+    .tgmafla-footer-nav-row {
+      justify-content: center;
+      gap: 8px 18px;
+    }
+
+    .tgmafla-footer-nav-link {
+      font-size: 17px;
+    }
+
+    .tgmafla-footer-socials {
+      gap: 16px;
+    }
+
+    .tgmafla-footer-social-link {
+      font-size: 32px;
+    }
+
+    .tgmafla-footer-info-block + .tgmafla-footer-info-block {
+      margin-top: 16px;
+    }
+
+    .tgmafla-footer-info-title {
+      font-size: 17px;
+      margin-bottom: 4px;
+    }
+
+    .tgmafla-footer-info-text,
+    .tgmafla-footer-contact-link {
+      font-size: 17px;
+      line-height: 1.34;
+      max-width: 32ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .tgmafla-footer-contact-row {
+      justify-content: center;
+    }
+
+    .tgmafla-footer-contact-icon {
+      font-size: 24px;
+    }
+
+    .tgmafla-footer-bottom {
+      margin-top: 24px;
+    }
+
+    .tgmafla-footer-bottom-line {
+      margin-bottom: 16px;
+    }
+
+    .tgmafla-footer-copy {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .tgmafla-footer-section {
+      padding: 24px 12px 14px;
+    }
+
+    .tgmafla-footer-top {
+      gap: 22px;
+    }
+
+    .tgmafla-footer-logo-img {
+      width: 136px;
+    }
+
+    .tgmafla-footer-nav {
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .tgmafla-footer-nav-row {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .tgmafla-footer-nav-link {
+      font-size: 16px;
+      line-height: 1.22;
+      text-align: center;
+    }
+
+    .tgmafla-footer-socials {
+      gap: 14px;
+      justify-content: center;
+    }
+
+    .tgmafla-footer-social-link {
+      font-size: 30px;
+    }
+
+    .tgmafla-footer-info-title {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .tgmafla-footer-info-text,
+    .tgmafla-footer-contact-link {
+      font-size: 15px;
+      line-height: 1.38;
+      word-break: break-word;
+      max-width: 26ch;
+      text-align: center;
+    }
+
+    .tgmafla-footer-contact-row {
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-align: center;
+    }
+
+    .tgmafla-footer-contact-icon {
+      font-size: 22px;
+      margin-top: 0;
+    }
+
+    .tgmafla-footer-copy {
+      font-size: 14px;
+      line-height: 1.4;
+      max-width: 28ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+</style>

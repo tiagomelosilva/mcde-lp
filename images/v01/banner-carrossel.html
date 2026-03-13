@@ -1,0 +1,459 @@
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+
+<section class="tgmafla-hero-slider" id="tgmaflaHeroSlider" aria-label="Carrossel principal">
+  <div class="tgmafla-hero-track">
+    <!-- Slide 1 -->
+    <article
+      class="tgmafla-hero-slide tgmafla-hero-slide-is-active"
+      style="--tgmafla-slide-bg: url('https://maflaodontologia.com.br/wp-content/uploads/2026/03/bn001.jpg');"
+      aria-hidden="false"
+    >
+      <div class="tgmafla-hero-slide-bg"></div>
+      <div class="tgmafla-hero-slide-overlay"></div>
+
+      <div class="tgmafla-hero-content-wrap">
+        <div class="tgmafla-hero-content-box">
+          <h2 class="tgmafla-hero-title">ALÍVIO IMEDIATO DA SUA DOR!</h2>
+
+          <p class="tgmafla-hero-subtitle">
+            Tratamentos de canal rápidos e precisos com o uso de<br />
+            tecnologia avançada.
+          </p>
+
+          <div class="tgmafla-hero-highlight-box">
+            <span>Volte a sorrir sem medo como antes!</span>
+          </div><br>
+
+          <a href="https://wa.me/556232284073" class="tgmafla-hero-cta-btn">Agende uma consulta</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Slide 2 -->
+    <article
+      class="tgmafla-hero-slide"
+      style="--tgmafla-slide-bg: url('https://maflaodontologia.com.br/wp-content/uploads/2026/03/bn02.jpg');"
+      aria-hidden="true"
+    >
+      <div class="tgmafla-hero-slide-bg"></div>
+      <div class="tgmafla-hero-slide-overlay"></div>
+
+      <div class="tgmafla-hero-content-wrap">
+        <div class="tgmafla-hero-content-box">
+          <h2 class="tgmafla-hero-title">REFERÊNCIA EM REABILITAÇÃO<br />ORAL E ESTÉTICA</h2>
+
+          <p class="tgmafla-hero-subtitle">
+            O sorriso dos seus sonhos começa aqui!
+          </p>
+
+          <!-- <div class="tgmafla-hero-highlight-box">
+            <span>Volte a sorrir sem medo como antes!</span>
+          </div><br> -->
+
+          <a href="#especialidades" class="tgmafla-hero-cta-btn">Conheça nossas especialidades</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <button
+    class="tgmafla-hero-nav tgmafla-hero-nav-prev"
+    id="tgmaflaHeroPrev"
+    type="button"
+    aria-label="Banner anterior"
+  >
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+
+  <button
+    class="tgmafla-hero-nav tgmafla-hero-nav-next"
+    id="tgmaflaHeroNext"
+    type="button"
+    aria-label="Próximo banner"
+  >
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+</section>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+  .tgmafla-hero-slider,
+  .tgmafla-hero-slider *,
+  .tgmafla-hero-slider *::before,
+  .tgmafla-hero-slider *::after {
+    box-sizing: border-box;
+  }
+
+  .tgmafla-hero-slider {
+    --tgmafla-hero-height: min(52vw, 700px);
+    --tgmafla-hero-min-height: 560px;
+    --tgmafla-hero-overlay: rgba(0, 0, 0, 0.35);
+    --tgmafla-hero-text: #ffffff;
+    --tgmafla-hero-button-bg: #d6a08e;
+    --tgmafla-hero-button-bg-hover: #c58d7d;
+    --tgmafla-hero-button-text: #ffffff;
+    --tgmafla-hero-highlight-border: rgba(255, 255, 255, 0.9);
+    --tgmafla-hero-nav-bg: rgba(255, 255, 255, 0.95);
+    --tgmafla-hero-nav-icon: #2f2f2f;
+
+    position: relative;
+    width: 100vw;
+    max-width: 100vw;
+    height: var(--tgmafla-hero-height);
+    min-height: var(--tgmafla-hero-min-height);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 0;
+    overflow: hidden;
+    isolation: isolate;
+  }
+
+  .tgmafla-hero-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .tgmafla-hero-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 3s ease,
+      visibility 3s ease;
+    z-index: 1;
+  }
+
+  .tgmafla-hero-slide.tgmafla-hero-slide-is-active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+  }
+
+  .tgmafla-hero-slide-bg,
+  .tgmafla-hero-slide-overlay,
+  .tgmafla-hero-content-wrap {
+    position: absolute;
+    inset: 0;
+  }
+
+  .tgmafla-hero-slide-bg {
+    background-image: var(--tgmafla-slide-bg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.02);
+  }
+
+  .tgmafla-hero-slide-overlay {
+    background: var(--tgmafla-hero-overlay);
+    z-index: 1;
+  }
+
+  .tgmafla-hero-content-wrap {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 110px 30px 70px;
+    text-align: center;
+  }
+
+  .tgmafla-hero-content-box {
+    max-width: 980px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .tgmafla-hero-title {
+    margin: 0 0 20px;
+    color: var(--tgmafla-hero-text);    
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.02;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+
+  .tgmafla-hero-subtitle {
+    margin: 0 auto 26px;
+    max-width: 900px;
+    color: var(--tgmafla-hero-text);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+
+  .tgmafla-hero-highlight-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 54px;
+    margin: 0 auto 42px;
+    padding: 8px 18px;
+    border: 4px solid var(--tgmafla-hero-highlight-border);
+    border-radius: 8px;
+    color: var(--tgmafla-hero-text);
+    background: transparent;
+    max-width: 100%;
+  }
+
+  .tgmafla-hero-highlight-box span {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.05;
+  }
+
+  .tgmafla-hero-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 0 24px;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #996151, #c58d7d);
+    color: var(--tgmafla-hero-button-text);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    transition:
+      transform 0.25s ease,
+      opacity 0.25s ease;
+  }
+
+  .tgmafla-hero-cta-btn:hover,
+  .tgmafla-hero-cta-btn:focus {
+    background-image: linear-gradient(to top, #996151, #c58d7d);
+    color: #ffffff;
+    transform: translateY(-1px);
+    outline: none;
+  }
+
+  .tgmafla-hero-nav {
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    width: 52px;
+    height: 52px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: var(--tgmafla-hero-nav-bg);
+    color: var(--tgmafla-hero-nav-icon);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition:
+      transform 0.25s ease,
+      opacity 0.25s ease;
+  }
+
+  .tgmafla-hero-nav:hover,
+  .tgmafla-hero-nav:focus {
+    transform: translateY(-50%) scale(1.04);
+    outline: none;
+  }
+
+  .tgmafla-hero-nav i {
+    font-size: 26px;
+    line-height: 1;
+  }
+
+  .tgmafla-hero-nav-prev {
+    left: 122px;
+  }
+
+  .tgmafla-hero-nav-next {
+    right: 122px;
+  }
+
+  @media (max-width: 1366px) {
+    .tgmafla-hero-nav-prev {
+      left: 72px;
+    }
+
+    .tgmafla-hero-nav-next {
+      right: 72px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .tgmafla-hero-slider {
+      --tgmafla-hero-height: 72vh;
+      --tgmafla-hero-min-height: 520px;
+    }
+
+    .tgmafla-hero-content-wrap {
+      padding: 110px 28px 60px;
+    }
+
+    .tgmafla-hero-title {
+      font-size: clamp(30px, 5.4vw, 48px);
+    }
+
+    .tgmafla-hero-subtitle {
+      font-size: clamp(20px, 3.2vw, 30px);
+    }
+
+    .tgmafla-hero-highlight-box span {
+      font-size: clamp(22px, 3vw, 34px);
+    }
+
+    .tgmafla-hero-nav-prev {
+      left: 36px;
+    }
+
+    .tgmafla-hero-nav-next {
+      right: 36px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .tgmafla-hero-slider {
+      --tgmafla-hero-height: 88vh;
+      --tgmafla-hero-min-height: 560px;
+    }
+
+    .tgmafla-hero-content-wrap {
+      padding: 110px 22px 70px;
+    }
+
+    .tgmafla-hero-title {
+      margin-bottom: 18px;
+      font-size: clamp(28px, 8vw, 42px);
+      line-height: 1.05;
+    }
+
+    .tgmafla-hero-subtitle {
+      margin-bottom: 20px;
+      font-size: clamp(18px, 5.1vw, 28px);
+      line-height: 1.18;
+    }
+
+    .tgmafla-hero-subtitle br {
+      display: none;
+    }
+
+    .tgmafla-hero-highlight-box {
+      min-height: 48px;
+      margin-bottom: 28px;
+      padding: 8px 14px;
+      border-width: 3px;
+    }
+
+    .tgmafla-hero-highlight-box span {
+      font-size: clamp(18px, 5vw, 28px);
+      line-height: 1.12;
+    }
+
+    .tgmafla-hero-cta-btn {
+      min-height: 46px;
+      padding: 0 18px;
+      font-size: clamp(18px, 4.6vw, 24px);
+    }
+
+    .tgmafla-hero-nav {
+      width: 46px;
+      height: 46px;
+    }
+
+    .tgmafla-hero-nav i {
+      font-size: 22px;
+    }
+
+    .tgmafla-hero-nav-prev {
+      left: 14px;
+    }
+
+    .tgmafla-hero-nav-next {
+      right: 14px;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    const tgmaflaHeroSlider = document.getElementById("tgmaflaHeroSlider");
+    if (!tgmaflaHeroSlider) return;
+
+    const tgmaflaSlides = Array.from(
+      tgmaflaHeroSlider.querySelectorAll(".tgmafla-hero-slide")
+    );
+    const tgmaflaPrevBtn = document.getElementById("tgmaflaHeroPrev");
+    const tgmaflaNextBtn = document.getElementById("tgmaflaHeroNext");
+
+    if (!tgmaflaSlides.length) return;
+
+    let tgmaflaCurrentIndex = 0;
+    let tgmaflaAutoPlay = null;
+    const tgmaflaIntervalTime = 7000; // tempo total de exibição
+    const tgmaflaSlideCount = tgmaflaSlides.length;
+
+    function tgmaflaShowSlide(index) {
+      tgmaflaSlides.forEach((slide, i) => {
+        const isActive = i === index;
+        slide.classList.toggle("tgmafla-hero-slide-is-active", isActive);
+        slide.setAttribute("aria-hidden", isActive ? "false" : "true");
+      });
+      tgmaflaCurrentIndex = index;
+    }
+
+    function tgmaflaNextSlide() {
+      const nextIndex = (tgmaflaCurrentIndex + 1) % tgmaflaSlideCount;
+      tgmaflaShowSlide(nextIndex);
+    }
+
+    function tgmaflaPrevSlideFn() {
+      const prevIndex =
+        (tgmaflaCurrentIndex - 1 + tgmaflaSlideCount) % tgmaflaSlideCount;
+      tgmaflaShowSlide(prevIndex);
+    }
+
+    function tgmaflaStartAutoPlay() {
+      tgmaflaStopAutoPlay();
+      tgmaflaAutoPlay = setInterval(tgmaflaNextSlide, tgmaflaIntervalTime);
+    }
+
+    function tgmaflaStopAutoPlay() {
+      if (tgmaflaAutoPlay) {
+        clearInterval(tgmaflaAutoPlay);
+        tgmaflaAutoPlay = null;
+      }
+    }
+
+    if (tgmaflaNextBtn) {
+      tgmaflaNextBtn.addEventListener("click", function () {
+        tgmaflaNextSlide();
+        tgmaflaStartAutoPlay();
+      });
+    }
+
+    if (tgmaflaPrevBtn) {
+      tgmaflaPrevBtn.addEventListener("click", function () {
+        tgmaflaPrevSlideFn();
+        tgmaflaStartAutoPlay();
+      });
+    }
+
+    tgmaflaHeroSlider.addEventListener("mouseenter", tgmaflaStopAutoPlay);
+    tgmaflaHeroSlider.addEventListener("mouseleave", tgmaflaStartAutoPlay);
+
+    tgmaflaShowSlide(0);
+    tgmaflaStartAutoPlay();
+  })();
+</script>

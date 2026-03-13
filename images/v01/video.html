@@ -1,0 +1,580 @@
+<section class="tgmafla-mvv-section" id="sobre-nos">
+  <div class="tgmafla-mvv-overlay"></div>
+  <div class="tgmafla-mvv-lines"></div>
+
+  <div class="tgmafla-mvv-shell">
+    <div class="tgmafla-mvv-text-col">
+      <div class="tgmafla-mvv-item">
+  <h3 class="tgmafla-mvv-item-title">
+    <span class="tgmafla-mvv-item-icon">
+      <i class="fa-solid fa-bullseye"></i>
+    </span>
+    <span>Missão</span>
+  </h3>
+  <p class="tgmafla-mvv-item-text">
+    Proporcionar uma experiência odontológica de alto padrão, onde o
+    refinamento técnico e o cuidado humanizado se unem para devolver o
+    prazer de comer e a alegria de sorrir com confiança.
+  </p>
+</div>
+
+<div class="tgmafla-mvv-item">
+  <h3 class="tgmafla-mvv-item-title">
+    <span class="tgmafla-mvv-item-icon">
+      <i class="fa-solid fa-eye"></i>
+    </span>
+    <span>Visão</span>
+  </h3>
+  <p class="tgmafla-mvv-item-text">
+    Ser reconhecida como a melhor clínica odontológica de Aparecida de
+    Goiânia, tornando-se a principal referência para quem busca um
+    dentista especializado em soluções que vão do tratamento de canal à
+    estética avançada, com excelência e proximidade.
+  </p>
+</div>
+
+<div class="tgmafla-mvv-item">
+  <h3 class="tgmafla-mvv-item-title">
+    <span class="tgmafla-mvv-item-icon">
+      <i class="fa-solid fa-gem"></i>
+    </span>
+    <span>Valores</span>
+  </h3>
+  <p class="tgmafla-mvv-item-text">
+    Atendimento Personalizado, Refinamento em cada detalhe, Ética
+    Profissional e Compromisso com a Qualidade.
+  </p>
+</div>
+    </div>
+
+    <div class="tgmafla-mvv-video-col">
+      <button
+        class="tgmafla-mvv-video-trigger"
+        id="tgmaflaMvvVideoTrigger"
+        type="button"
+        aria-label="Abrir vídeo institucional"
+      >
+        <span class="tgmafla-mvv-video-frame tgmafla-mvv-video-frame-back"></span>
+        <span class="tgmafla-mvv-video-frame tgmafla-mvv-video-frame-front"></span>
+
+        <span class="tgmafla-mvv-video-thumb-wrap">
+          <img
+            class="tgmafla-mvv-video-thumb"
+            src="https://maflaodontologia.com.br/wp-content/uploads/2026/03/play-video.png"
+            alt="Abrir vídeo institucional"
+          />
+          <span class="tgmafla-mvv-video-play">
+            <span class="tgmafla-mvv-video-play-triangle"></span>
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<div class="tgmafla-mvv-modal" id="tgmaflaMvvModal" aria-hidden="true">
+  <div class="tgmafla-mvv-modal-backdrop" data-tgmafla-mvv-close="true"></div>
+
+  <div
+    class="tgmafla-mvv-modal-dialog"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Vídeo institucional"
+  >
+    <button
+      class="tgmafla-mvv-modal-close"
+      id="tgmaflaMvvModalClose"
+      type="button"
+      aria-label="Fechar vídeo"
+    >
+      ×
+    </button>
+
+    <div class="tgmafla-mvv-modal-video-wrap">
+      <iframe
+        id="tgmaflaMvvVideoIframe"
+        src=""
+        title="Vídeo institucional Mafla Odontologia"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+  .tgmafla-mvv-section,
+  .tgmafla-mvv-section *,
+  .tgmafla-mvv-section *::before,
+  .tgmafla-mvv-section *::after,
+  .tgmafla-mvv-modal,
+  .tgmafla-mvv-modal *,
+  .tgmafla-mvv-modal *::before,
+  .tgmafla-mvv-modal *::after {
+    box-sizing: border-box;
+  }
+
+  .tgmafla-mvv-section {
+    position: relative;
+    width: 100%;
+    padding: 78px 20px;
+    overflow: hidden;
+    background-image: url("https://maflaodontologia.com.br/wp-content/uploads/2026/03/bt-video-txt.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    isolation: isolate;
+  }
+
+  .tgmafla-mvv-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(
+        90deg,
+        rgba(10, 10, 10, 0.72) 0%,
+        rgba(10, 10, 10, 0.68) 36%,
+        rgba(10, 10, 10, 0.52) 100%
+      );
+    z-index: 0;
+  }
+
+  .tgmafla-mvv-lines {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .tgmafla-mvv-lines::before,
+  .tgmafla-mvv-lines::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.4;
+  }
+
+  .tgmafla-mvv-lines::before {
+    background:
+      linear-gradient(rgba(255,255,255,0.14), rgba(255,255,255,0.14)) 0 82px / 100% 2px no-repeat,
+      linear-gradient(rgba(255,255,255,0.14), rgba(255,255,255,0.14)) right 40% top 0 / 2px 100% no-repeat,
+      linear-gradient(rgba(255,255,255,0.14), rgba(255,255,255,0.14)) right 18% top 0 / 2px 100% no-repeat,
+      linear-gradient(rgba(255,255,255,0.14), rgba(255,255,255,0.14)) left 0 bottom 30% / 100% 2px no-repeat;
+  }
+
+  .tgmafla-mvv-lines::after {
+    background:
+      radial-gradient(circle at left 16% top 20%, transparent 0 45px, rgba(255,255,255,0.18) 46px 48px, transparent 49px),
+      radial-gradient(circle at right 10% top 12%, transparent 0 52px, rgba(255,255,255,0.18) 53px 55px, transparent 56px);
+  }
+
+  .tgmafla-mvv-shell {
+    position: relative;
+    z-index: 2;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.02fr) minmax(420px, 0.98fr);
+    align-items: center;
+    gap: 36px;
+  }
+
+  .tgmafla-mvv-text-col {
+    padding: 20px 8px 20px 8px;
+  }
+
+  .tgmafla-mvv-item + .tgmafla-mvv-item {
+    margin-top: 22px;
+  }
+
+  .tgmafla-mvv-item-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 6px;
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+
+  .tgmafla-mvv-item-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 22px;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 1;
+    opacity: 0.96;
+  }
+
+  .tgmafla-mvv-item-text {
+    max-width: 640px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.96);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.22;
+    text-wrap: balance;
+  }
+
+  .tgmafla-mvv-video-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tgmafla-mvv-video-trigger {
+    position: relative;
+    width: min(100%, 600px);
+    aspect-ratio: 1.24 / 0.78;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+  }
+
+  .tgmafla-mvv-video-frame {
+    position: absolute;
+    border: 2px solid rgba(225, 167, 150, 0.9);
+    border-radius: 48px;
+    pointer-events: none;
+  }
+
+  .tgmafla-mvv-video-frame-back {
+    inset: -18px 10px 14px -18px;
+    opacity: 0.85;
+  }
+
+  .tgmafla-mvv-video-frame-front {
+    inset: 0;
+    opacity: 0.95;
+  }
+
+  .tgmafla-mvv-video-frame-back::before {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 84px;
+    right: -2px;
+    top: 34px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #e6ab98, #d89d8a);
+  }
+
+  .tgmafla-mvv-video-frame-back::after {
+    content: "";
+    position: absolute;
+    width: 74px;
+    height: 86px;
+    left: -18px;
+    bottom: -18px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #dba190, #c98d7e);
+    opacity: 0.94;
+  }
+
+  .tgmafla-mvv-video-thumb-wrap {
+    position: absolute;
+    inset: 18px 20px 18px 20px;
+    border-radius: 42px;
+    overflow: hidden;
+    display: block;
+    box-shadow: 0 24px 40px rgba(0, 0, 0, 0.22);
+  }
+
+  .tgmafla-mvv-video-thumb-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.12),
+        rgba(0, 0, 0, 0.2)
+      );
+  }
+
+  .tgmafla-mvv-video-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.45s ease;
+  }
+
+  .tgmafla-mvv-video-trigger:hover .tgmafla-mvv-video-thumb,
+  .tgmafla-mvv-video-trigger:focus .tgmafla-mvv-video-thumb {
+    transform: scale(1.04);
+  }
+
+  .tgmafla-mvv-video-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    width: 90px;
+    height: 90px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.96);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+      0 16px 28px rgba(0, 0, 0, 0.22),
+      inset 0 1px 1px rgba(255, 255, 255, 0.65);
+    transition: transform 0.28s ease;
+  }
+
+  .tgmafla-mvv-video-trigger:hover .tgmafla-mvv-video-play,
+  .tgmafla-mvv-video-trigger:focus .tgmafla-mvv-video-play {
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+
+  .tgmafla-mvv-video-play-triangle {
+    width: 0;
+    height: 0;
+    margin-left: 6px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 24px solid #000000;
+  }
+
+  .tgmafla-mvv-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.28s ease, visibility 0.28s ease;
+  }
+
+  .tgmafla-mvv-modal.tgmafla-mvv-modal-is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .tgmafla-mvv-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.78);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+
+  .tgmafla-mvv-modal-dialog {
+    position: relative;
+    z-index: 2;
+    width: min(100%, 1080px);
+    border-radius: 20px;
+    background: #111111;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+
+  .tgmafla-mvv-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .tgmafla-mvv-modal-video-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000000;
+  }
+
+  .tgmafla-mvv-modal-video-wrap iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+
+  body.tgmafla-mvv-modal-lock {
+    overflow: hidden;
+  }
+
+  @media (max-width: 1024px) {
+    .tgmafla-mvv-section {
+      padding: 62px 18px;
+    }
+
+    .tgmafla-mvv-shell {
+      grid-template-columns: 1fr;
+      gap: 34px;
+    }
+
+    .tgmafla-mvv-text-col {
+      order: 1;
+      padding: 0;
+    }
+
+    .tgmafla-mvv-video-col {
+      order: 2;
+    }
+
+    .tgmafla-mvv-item-text {
+      max-width: none;
+    }
+
+    .tgmafla-mvv-video-trigger {
+      width: min(100%, 760px);
+    }
+  }
+
+  @media (max-width: 767px) {
+    .tgmafla-mvv-section {
+      padding: 48px 14px;
+    }
+
+    .tgmafla-mvv-lines::before {
+      background:
+        linear-gradient(rgba(255,255,255,0.12), rgba(255,255,255,0.12)) 0 62px / 100% 2px no-repeat;
+    }
+
+    .tgmafla-mvv-item + .tgmafla-mvv-item {
+      margin-top: 18px;
+    }
+
+    .tgmafla-mvv-item-title {
+      font-size: clamp(22px, 6vw, 30px);
+    }
+
+    .tgmafla-mvv-item-text {
+      font-size: 18px;
+      line-height: 1.28;
+    }
+
+    .tgmafla-mvv-video-trigger {
+      width: 100%;
+    }
+
+    .tgmafla-mvv-video-frame-back {
+      inset: -10px 8px 10px -10px;
+      border-radius: 30px;
+    }
+
+    .tgmafla-mvv-video-frame-front {
+      border-radius: 28px;
+    }
+
+    .tgmafla-mvv-video-thumb-wrap {
+      inset: 12px;
+      border-radius: 24px;
+    }
+
+    .tgmafla-mvv-video-frame-back::before {
+      width: 18px;
+      height: 54px;
+      top: 28px;
+    }
+
+    .tgmafla-mvv-video-frame-back::after {
+      width: 54px;
+      height: 54px;
+      left: -10px;
+      bottom: -10px;
+    }
+
+    .tgmafla-mvv-video-play {
+      width: 68px;
+      height: 68px;
+    }
+
+    .tgmafla-mvv-video-play-triangle {
+      margin-left: 4px;
+      border-top-width: 11px;
+      border-bottom-width: 11px;
+      border-left-width: 18px;
+    }
+
+    .tgmafla-mvv-modal {
+      padding: 12px;
+    }
+
+    .tgmafla-mvv-modal-dialog {
+      border-radius: 14px;
+    }
+
+    .tgmafla-mvv-modal-close {
+      width: 38px;
+      height: 38px;
+      font-size: 24px;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    const tgmaflaMvvTrigger = document.getElementById("tgmaflaMvvVideoTrigger");
+    const tgmaflaMvvModal = document.getElementById("tgmaflaMvvModal");
+    const tgmaflaMvvModalClose = document.getElementById("tgmaflaMvvModalClose");
+    const tgmaflaMvvIframe = document.getElementById("tgmaflaMvvVideoIframe");
+
+    if (!tgmaflaMvvTrigger || !tgmaflaMvvModal || !tgmaflaMvvIframe) return;
+
+    const tgmaflaYoutubeEmbed =
+      "https://www.youtube.com/embed/VIDEO_ID_AQUI?autoplay=1&rel=0";
+
+    function tgmaflaOpenMvvModal() {
+      tgmaflaMvvModal.classList.add("tgmafla-mvv-modal-is-open");
+      tgmaflaMvvModal.setAttribute("aria-hidden", "false");
+      tgmaflaMvvIframe.src = tgmaflaYoutubeEmbed;
+      document.body.classList.add("tgmafla-mvv-modal-lock");
+    }
+
+    function tgmaflaCloseMvvModal() {
+      tgmaflaMvvModal.classList.remove("tgmafla-mvv-modal-is-open");
+      tgmaflaMvvModal.setAttribute("aria-hidden", "true");
+      tgmaflaMvvIframe.src = "";
+      document.body.classList.remove("tgmafla-mvv-modal-lock");
+    }
+
+    tgmaflaMvvTrigger.addEventListener("click", tgmaflaOpenMvvModal);
+
+    if (tgmaflaMvvModalClose) {
+      tgmaflaMvvModalClose.addEventListener("click", tgmaflaCloseMvvModal);
+    }
+
+    tgmaflaMvvModal.addEventListener("click", function (event) {
+      if (event.target.closest("[data-tgmafla-mvv-close='true']")) {
+        tgmaflaCloseMvvModal();
+      }
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (
+        event.key === "Escape" &&
+        tgmaflaMvvModal.classList.contains("tgmafla-mvv-modal-is-open")
+      ) {
+        tgmaflaCloseMvvModal();
+      }
+    });
+  })();
+</script>

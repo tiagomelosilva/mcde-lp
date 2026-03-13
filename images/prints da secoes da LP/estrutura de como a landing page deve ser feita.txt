@@ -1,0 +1,124 @@
+A primeira informação é essa. A hierarquia de camadas com os nomes de cada seção landing page no layout.
+
+Vou enviar a próxima informação...
+
+
+A hierarquia das seções:
+
+NAV BAR
+
+BN002 (Hero / banner)
+
+BN001 (segundo banner do slider)
+
+TEXTO E VÍDEO YT (modelo de operação)
+
+SERVIÇOS – GLASSMORPHISM COM MODAL
+
+Sistema MANTÉM
+
+PORTFÓLIO – GALERIA DE IMAGENS
+
+GATILHOS NUMÉRICOS – DEPOIMENTOS
+
+VAGAS – CARROSSEL VERTICAL
+
+MAPS COM FOOTER
+
+Ou seja, a landing está estruturada em 10 blocos principais, todos bem definidos.
+
+Algumas observações rápidas (só leitura de arquitetura, sem código ainda):
+
+O hero é um slider de 2 banners (BN002 e BN001)
+
+A seção Texto + Vídeo é o primeiro bloco de conteúdo institucional
+
+Serviços é um grid com cards + modal
+
+Sistema MANTÉM é uma seção de produto
+
+Portfólio funciona como prova social visual
+
+Gatilhos numéricos reforçam autoridade
+
+Vagas é um carrossel vertical de cards
+
+Maps + Footer fecha a LP
+
+
+
+Vou começar com as instruções agora mesmo e não crie código algum antes que eu termine de explicar todas as seções, uma por uma. Vou enviar vários chats até concluri meu raciocínio para então criarmos o código, combinado?
+
+
+
+O nav deve além de ser responsivo, ter o bg azul com efeito de glasmorphism, além do menu ser fixo na navegação.
+
+
+Vou enviar a próxima informação...
+
+
+
+Banner carrossel. Vou começar o projeto com dois banners e depois insiro mais conforme necessário (também teremos essa opção no CMS completo do projeto). Este elemento deve ser responsivo.
+
+Os textos serão digitados sobre a imagem que vou te enviar em um pacote com outros elementos em .zip ou .rar.
+
+Vou enviar a próxima informação.
+
+
+
+Esta será a seção de texto sobre a empresa e um vídeo do yt ao lado.
+Note que o texto está sobre um fundo azul com as bordas da direita arredondadas e estes elementos estão sobre uma imagem de fundo e do lado esquerdo teremos o player do vídeo do yt que vou colocar no projeto. Esta seção deve ser responsiva como todas as outras do projeto.
+Na quebra da responsividade, a parte arredondada que no desktop é do lado direito, passará a ficar no bottom do bt e abaixo dele o vídeo sobre a imagem de fundo. Essa será a responsividade desta seção.
+
+vou passar as próximas informações... 
+
+
+
+
+Esta seção será similar a uma seção que criamos para uma landing page de odontologia (espero que se lembre). A seção terá o título, subtítulo e abaixo os cards tal qual no layout do print. Note que os títulos de cada card, botão e ícone estão sobre um elemento de glasmorphism, por favor reproduza isso e também crie um modal ao clicar em saiba mais para que eu coloque a descrição completa de cada card (use lorem ipsum por hora), por favor use glasmorphism no bg do modal também. Esta seção também deve ser responsiva.
+
+Vou passar as próximas informações...
+
+
+
+
+Esta é a seção que fala um pouco sobre o projeto mantém.
+Por favor, abaixo de cada descrição dos tópicos, coloque um botão "Saiba mais..." e faça com que esse botão abra um modal em glasmorphism para que eu também possa descrever melhor cada item que resume o mantém. Esta seção deve ser responsiva e na quebra, o texto dos tópicos virá acima da imagem de mockup das telas do sistema e essa imagem dever ficar um pouco menor na quebra do responsivo por favor.
+
+Vou passar as próximas informações...
+
+
+
+
+Esta é a seção de projetos onde colocaremos imagens em galerias independentes correspondentes a cada tópico da seção. Os tópicos serão "Educação, Saúde e Administração". No layout fiz apenas dois blocos, mas preciso que você fala três deles seguindo a minha lógica de programação que é a mesma usada na minha landing page com a qual me ajudou a finalizar o CMS esses dias. A seção também será responsiva. A clicar em cada imagem uma galeria será aberta mostrando as imagens contidas nela com a possibilidade de se navegar entre elas atrávés de setas de nav ou pelas teclas do teclado.
+
+Vou enviar as próximas informações...
+
+
+
+
+Nesta seção mostraremos os gatilhos numéricos com resultados da empresa e alguns depoimentos de entidades atendidas. Os gatilhos numéricos serão todos animados iniciando a contagem de 0 até o número final e os depoimentos serão mostrados como carrossel navegável. Esta seção será responsiva.
+
+Vou passar as próximas informações...
+
+
+
+
+Esta seção é bem especial, ela é a seção de vagas disponíveis na empresa.
+Nesta seção teremos uma rolagem vertical intermitente de imagens com os nomes das vagas. Perceba que o título de cada vaga tem um contraste em glasmorphism entre o texto e a imagem e logo abaixo um CTA de contato direto com o whatsapp do RH da empresa. Também quero que haja a possibilidade de clicar na imagem e abrir um modal também com glasmorphism onde vou descrever cada vaga e suas respectivas exigências. Esta seção deve ser responsiva. Na quebra da responsividade a rolagem que é vertical no desktop se torna horizontal no mobile.
+
+Vou passar as próximas informações...
+
+
+
+
+Esta seção é dupla e será nossa útlima.
+Acima do footer há um iframe do maps com a localização da MCDE ENGENHARIA.
+O footer realmente será simples como no print. Esta parte inteira deve ser responsiva, com boa distribuição e bem diagramada na quebra do responsivo.
+
+Vou agora enviar os assets (ícones e imagens) para podermos iniciar o projeto... 
+
+
+
+Estas são as imagens para se usar no projeto...
+Vou enviar as imagens para a galeria de projetos antes que comece a fazer o código, só um instante por favor.

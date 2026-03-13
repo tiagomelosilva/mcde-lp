@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCDE Engenharia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Nunito+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar" id="topo">
+    <div class="container nav-container">
+      <a href="#topo" class="logo-link" aria-label="MCDE Engenharia">
+        <img src="images/mcde-logo-branco.png" class="logo" alt="MCDE Engenharia">
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#modelo">Programa de Manutenção</a>
+        <a href="#sistema">Sistema MANTÉM</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#vagas">Vagas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" aria-label="Carrossel principal">
+      <div class="hero-slide is-active" data-bg="images/bn02.jpg" aria-hidden="false">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <h1>EXCELÊNCIA EM GESTÃO<br>E EXECUÇÃO DE MANUTENÇÃO</h1>
+          <p>Transparência, eficiência e gestão inteligente na manutenção de patrimônios públicos.</p>
+        </div>
+      </div>
+
+      <div class="hero-slide" data-bg="images/bn001.jpg" aria-hidden="true">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <h1>MANUTENÇÃO PÚBLICA<br>COM TECNOLOGIA E CONTROLE</h1>
+          <p>Planejamento, operação e rastreabilidade para resultados reais.</p>
+        </div>
+      </div>
+
+      <button class="hero-nav hero-prev" id="heroPrev" type="button" aria-label="Slide anterior">&#10094;</button>
+      <button class="hero-nav hero-next" id="heroNext" type="button" aria-label="Próximo slide">&#10095;</button>
+      <div class="hero-dots" id="heroDots"></div>
+    </section>
+
+    <section class="modelo" id="modelo">
+      <div class="container modelo-container">
+        <article class="modelo-card">
+          <h2>Nosso modelo de operação:</h2>
+          <p>Nosso Programa de Manutenção atende às principais necessidades de gestão e execução de forma eficiente e planejada.</p>
+          <div class="modelo-topicos">
+            <ul>
+              <li><strong>Manutenção Programada:</strong> Antecipamos problemas para evitar interrupções;</li>
+              <li><strong>Manutenção Não Programada:</strong> Soluções rápidas e eficazes;</li>
+              <li><strong>Manutenção Preventiva:</strong> Prolongamos a vida útil do patrimônio;</li>
+              <li><strong>Manutenção Rotineira:</strong> Garantimos o funcionamento pleno todos os dias.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="modelo-video">
+          <div class="modelo-video-frame">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo institucional" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="servicos" id="servicos">
+      <div class="container">
+        <h2>Gestão completa de<br>manutenção pública</h2>
+        <span class="servicos-line" aria-hidden="true"></span>
+        <p class="sub">Planejamento, tecnologia e execução coordenada para garantir<br>funcionamento contínuo do patrimônio público.</p>
+
+        <div class="servicos-grid">
+          <article class="servico" data-title="Planejamento Operacional" data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod massa in purus tristique, vitae aliquam augue malesuada.">
+            <img src="images/BG-CARD.png" alt="Planejamento operacional">
+            <div class="servico-glass">
+              <span class="servico-icon" aria-hidden="true">
+                <img src="images/check-mark.png" alt="">
+              </span>
+              <h3><span>Planejamento</span><span>Operacional</span></h3>
+              <button type="button" class="open-modal">Saiba mais</button>
+            </div>
+          </article>
+
+          <article class="servico" data-title="Logística e Suprimentos" data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod lacus sed turpis faucibus, vitae ultricies sem porta.">
+            <img src="images/BG-CARD copiar 4.png" alt="Logística e suprimentos">
+            <div class="servico-glass">
+              <span class="servico-icon" aria-hidden="true">
+                <img src="images/check-mark.png" alt="">
+              </span>
+              <h3><span>Logística e</span><span>Suprimentos</span></h3>
+              <button type="button" class="open-modal">Saiba mais</button>
+            </div>
+          </article>
+
+          <article class="servico" data-title="Tecnologia e Sistema MANTÉM" data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat nisi vel justo finibus, vitae commodo nunc laoreet.">
+            <img src="images/BG-CARD copiar 6.png" alt="Sistema MANTÉM">
+            <div class="servico-glass">
+              <span class="servico-icon" aria-hidden="true">
+                <img src="images/check-mark.png" alt="">
+              </span>
+              <h3><span>Sistema</span><span>MANTÉM</span></h3>
+              <button type="button" class="open-modal">Saiba mais</button>
+            </div>
+          </article>
+
+          <article class="servico" data-title="Execução e Controle" data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida ligula sit amet justo volutpat, a facilisis lorem sagittis.">
+            <img src="images/BG-CARD copiar 8.png" alt="Execução e controle">
+            <div class="servico-glass">
+              <span class="servico-icon" aria-hidden="true">
+                <img src="images/check-mark.png" alt="">
+              </span>
+              <h3><span>Execução e</span><span>Controle</span></h3>
+              <button type="button" class="open-modal">Saiba mais</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sistema" id="sistema">
+      <div class="container sistema-container">
+        <div class="sistema-img">
+          <img src="images/mockup-bg-sistema-matem.png" alt="Sistema MANTÉM">
+        </div>
+
+        <div class="sistema-info">
+          <img class="mantem-brand" src="images/MANTÉM - LOGO-01-05.png" alt="MANTÉM">
+          <h2><span class="sistema-title-line"><span class="sistema-highlight">Tecnologia</span> aplicada à gestão da</span><span class="sistema-title-line">manutenção pública</span></h2>
+          <div class="sistema-linha"></div>
+
+          <div class="sistema-timeline">
+            <article class="sistema-item">
+              <span class="sistema-dot" aria-hidden="true">
+                <img src="images/completed-task.png" alt="">
+              </span>
+              <h3>Registro e planejamento<br>das demandas</h3>
+              <p>Cada solicitação de manutenção é registrada no sistema e classificada de acordo com o tipo de serviço e prioridade de atendimento.</p>
+              <button type="button" class="open-modal" data-title="Registro e planejamento das demandas" data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium arcu id gravida convallis.">Saiba mais...</button>
+            </article>
+
+            <article class="sistema-item">
+              <span class="sistema-dot" aria-hidden="true">
+                <img src="images/money.png" alt="">
+              </span>
+              <h3>Acompanhamento<br>da execução</h3>
+              <p>As equipes executam os serviços com acompanhamento digital das atividades, garantindo organização e eficiência na operação.</p>
+              <button type="button" class="open-modal" data-title="Acompanhamento da execução" data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae magna at tortor accumsan ultrices.">Saiba mais...</button>
+            </article>
+
+            <article class="sistema-item">
+              <span class="sistema-dot" aria-hidden="true">
+                <img src="images/technical-support.png" alt="">
+              </span>
+              <h3>Controle e<br>rastreabilidade</h3>
+              <p>Fotos, registros técnicos e informações operacionais ficam armazenados no sistema, garantindo transparência e controle das atividades executadas.</p>
+              <button type="button" class="open-modal" data-title="Controle e rastreabilidade" data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat elit sed nisi ultricies volutpat.">Saiba mais...</button>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+      <div class="projeto-linha">
+        <article class="projeto-foto projeto-click" data-gallery="educacao">
+          <img src="images/thumb-projetos01.jpg" alt="Projetos de Educação">
+        </article>
+        <article class="projeto-texto projeto-texto-direita">
+          <p class="projeto-numero">01</p>
+          <p class="projeto-tag">Educação</p>
+          <h3>Manutenção e gestão<br>de patrimônios públicos</h3>
+          <p class="projeto-descricao">Atuação em escolas, centros educacionais e unidades de ensino, garantindo condições adequadas de funcionamento para alunos, professores e equipes administrativas.</p>
+          <button type="button" class="open-gallery projeto-open" data-gallery="educacao">Fale comigo</button>
+        </article>
+      </div>
+      <div class="projeto-linha">
+        <article class="projeto-texto">
+          <p class="projeto-numero">02</p>
+          <p class="projeto-tag">Educação</p>
+          <h3>Manutenção e gestão<br>de patrimônios públicos</h3>
+          <p class="projeto-descricao">Atuação em escolas, centros educacionais e unidades de ensino, garantindo condições adequadas de funcionamento para alunos, professores e equipes administrativas.</p>
+          <button type="button" class="open-gallery projeto-open" data-gallery="saude">Fale comigo</button>
+        </article>
+        <article class="projeto-foto projeto-click" data-gallery="saude">
+          <img src="images/thumb-projetos02.jpg" alt="Projetos de Educação">
+        </article>
+      </div>
+      <div class="projeto-linha">
+        <article class="projeto-foto projeto-click" data-gallery="administracao">
+          <img src="images/thumb-projetos01.jpg" alt="Projetos de Educação">
+        </article>
+        <article class="projeto-texto projeto-texto-direita">
+          <p class="projeto-numero">03</p>
+          <p class="projeto-tag">Educação</p>
+          <h3>Manutenção e gestão<br>de patrimônios públicos</h3>
+          <p class="projeto-descricao">Atuação em escolas, centros educacionais e unidades de ensino, garantindo condições adequadas de funcionamento para alunos, professores e equipes administrativas.</p>
+          <button type="button" class="open-gallery projeto-open" data-gallery="administracao">Fale comigo</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="resultados" id="resultados">
+      <div class="container">
+        <h2>Impacto da<br>nossa atuação</h2>
+
+        <div class="numeros-grid">
+          <article class="numero">
+            <span class="numero-icon" aria-hidden="true"><img src="icons/completed-task.png" alt=""></span>
+            <h3>+<span class="counter" data-target="120">0</span></h3>
+            <p><span>Unidades</span><span>Atendidas</span></p>
+          </article>
+          <article class="numero">
+            <span class="numero-icon" aria-hidden="true"><img src="icons/technical-support.png" alt=""></span>
+            <h3>+<span class="counter" data-target="8">0</span> Mil</h3>
+            <p><span>Ordentes</span><span>de serviço</span></p>
+          </article>
+          <article class="numero">
+            <span class="numero-icon" aria-hidden="true"><img src="icons/money.png" alt=""></span>
+            <h3>+<span class="counter" data-target="35">0</span> Mil</h3>
+            <p><span>Horas de</span><span>Manutenção</span></p>
+          </article>
+          <article class="numero">
+            <span class="numero-icon" aria-hidden="true"><img src="icons/map.png" alt=""></span>
+            <h3>+<span class="counter" data-target="15">0</span></h3>
+            <p><span>Municípios</span><span>Atendidos</span></p>
+          </article>
+        </div>
+        <div class="resultados-line"></div>
+
+        <div class="depoimentos" id="depoimentos">
+          <button type="button" class="dep-nav" id="depPrev" aria-label="Depoimento anterior">&#10094;</button>
+
+          <div class="depoimentos-viewport">
+            <div class="depoimentos-track" id="depTrack">
+              <article class="depoimento">
+                <div class="dep-head">
+                  <div>
+                    <h4>Lorem Ipsum</h4>
+                    <span>Paciente</span>
+                  </div>
+                  <span class="dep-avatar" aria-hidden="true"><img src="icons/user-icon.png" alt=""></span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              </article>
+              <article class="depoimento">
+                <div class="dep-head">
+                  <div>
+                    <h4>Lorem Ipsum</h4>
+                    <span>Paciente</span>
+                  </div>
+                  <span class="dep-avatar" aria-hidden="true"><img src="icons/user-icon.png" alt=""></span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              </article>
+              <article class="depoimento">
+                <div class="dep-head">
+                  <div>
+                    <h4>Lorem Ipsum</h4>
+                    <span>Paciente</span>
+                  </div>
+                  <span class="dep-avatar" aria-hidden="true"><img src="icons/user-icon.png" alt=""></span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              </article>
+            </div>
+          </div>
+
+          <button type="button" class="dep-nav" id="depNext" aria-label="Próximo depoimento">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="vagas" id="vagas">
+      <div class="vagas-overlay"></div>
+      <div class="container vagas-container">
+        <div class="vagas-slider-wrap">
+          <button class="vagas-arrow vagas-up" id="vagasUp" type="button" aria-label="Subir vagas">
+            <img src="icons/up-chevron.png" alt="">
+          </button>
+          <div class="vagas-viewport">
+            <div class="vagas-track" id="vagasTrack">
+              <article class="vaga-card" data-title="Calheiro" data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Requisitos: experiência com manutenção de coberturas e sistemas de calhas.">
+                <img src="images/adm-obras.png" alt="Vaga Auxiliar de Obras">
+                <div class="vaga-meta">
+                  <h4>ADM. DE OBRAS</h4>
+                  <a class="vaga-cta" href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/whatsapp.png" alt="">
+                    <span>Fale Conosco</span>
+                  </a>
+                </div>
+              </article>
+              <article class="vaga-card" data-title="Engenheiro Civil" data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Requisitos: formação em engenharia civil, CREA ativo e experiência em manutenção predial.">
+                <img src="images/engenheiro-civil.png" alt="Vaga Engenheiro Civil">
+                <div class="vaga-meta">
+                  <h4>ENGENHEIRO CIVIL</h4>
+                  <a class="vaga-cta" href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/whatsapp.png" alt="">
+                    <span>Fale Conosco</span>
+                  </a>
+                </div>
+              </article>
+              <article class="vaga-card" data-title="Auxiliar de Obras" data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Requisitos: vivência em canteiro e apoio operacional de equipes técnicas.">
+                <img src="images/calheiro.png" alt="Vaga Calheiro">
+                <div class="vaga-meta">
+                  <h4>CALHEIRO</h4>
+                  <a class="vaga-cta" href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/whatsapp.png" alt="">
+                    <span>Fale Conosco</span>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="vagas-arrow vagas-down" id="vagasDown" type="button" aria-label="Descer vagas">
+            <img src="icons/down-chevron.png" alt="">
+          </button>
+        </div>
+
+        <div class="vagas-texto">
+          <h2>Trabalhe<br>Conosco!</h2>
+          <p>Estamos sempre em busca de profissionais comprometidos com qualidade, responsabilidade e excelência na execução de serviços de engenharia e manutenção.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="maps" id="maps">
+      <iframe title="Localização MCDE Engenharia" src="https://maps.google.com/maps?q=MCDE%20Engenharia&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
+  <footer class="footer" id="contato">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <img src="images/mcde-logo-branco.png" alt="MCDE Engenharia">
+        <p>A MCDE Engenharia Ltda é uma empresa de capital fechado baseada em Aparecida de Goiânia, GO, especializada em serviços de construção, manutenção elétrica, engenharia e arquitetura.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">
+            <img src="icons/instagram.png" alt="">
+          </a>
+          <a href="#" aria-label="Facebook">
+            <img src="icons/facebook.png" alt="">
+          </a>
+          <a href="#" aria-label="WhatsApp">
+            <img src="icons/whatsapp.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <h4>Endereço</h4>
+        <p>Av. W, 242 - Mansões Paraíso,<br />Aparecida de Goiânia - GO, 74952-570</p>
+        <h4>Contato</h4>
+        <p class="footer-phone">
+          <img src="icons/phone-square.png" alt="">
+          <span>(62) 0000-0000</span>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom-line"></div>
+    <p class="footer-copy">MCDE ENGENHARIA — Copyright © 2026 — Desenvolvido por IDEATECH</p>
+  </footer>
+
+  <div class="modal" id="contentModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal="true"></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Fechar">&times;</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <div class="gallery-modal" id="galleryModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-gallery="true"></div>
+    <div class="gallery-dialog" role="dialog" aria-modal="true" aria-label="Galeria de projetos">
+      <button class="modal-close" id="galleryClose" type="button" aria-label="Fechar">&times;</button>
+      <button class="gallery-nav gallery-prev" id="galleryPrev" type="button" aria-label="Imagem anterior">&#10094;</button>
+      <img id="galleryImage" src="" alt="Imagem do projeto">
+      <button class="gallery-nav gallery-next" id="galleryNext" type="button" aria-label="Próxima imagem">&#10095;</button>
+      <p id="galleryCaption"></p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
